@@ -180,8 +180,10 @@ void Camera::displayCodeBar()
     QString result = decoder.decodeImage(imageToDecode);
     if(!result.isEmpty())
     {
-        QSound::play("C:\\Users\\Ash.IT\\Desktop\\beep.wav");
-        L_displayTextCode->setText("Code :"+result+"  "+QString::number(t.elapsed())+" ms.");
+        QSound::play("://BEEP");
+        QString outputStr = "Code :\n"+result+" \n "+QString::number(t.elapsed())+" ms.";
+//        L_displayTextCode->setText(outputStr);
+        L_displayCode->setText(outputStr);
     }
 }
 

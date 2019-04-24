@@ -379,10 +379,20 @@ background-color: rgb(255, 0, 0);</string>
            <height>350</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">font: 63 18pt &quot;Titillium Web SemiBold&quot;;
+color: rgb(0, 0, 127);</string>
+         </property>
          <property name="text">
-          <string/>
+          <string>No Barcode Detected !</string>
          </property>
          <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
           <bool>true</bool>
          </property>
         </widget>
